@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@drawable/moyenne"
+    tools:context=".DrawerActivity.moyenne">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Remplir le tableau :"
+    android:textSize="24sp"
+    android:textColor="#0B7E8D"/>
+<HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:text="Unité" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:text="Coeff." />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:text="Exam" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:text="éval %" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:text="CC/TP" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textStyle="bold"
+                android:text="Moy" />
+
+        </LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/unit"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/row"
+            android:hint="Default"
+            android:gravity="center"
+            android:padding="3dp" />
+
+        <EditText
+            android:id="@+id/coeff"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/row"
+            android:gravity="center"
+            android:hint="0"
+            android:inputType="number"
+            android:padding="3dp" />
+
+        <EditText
+            android:id="@+id/exam"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/row"
+            android:gravity="center"
+            android:hint="00.00"
+            android:inputType="numberDecimal"
+            android:padding="3dp" />
+
+        <EditText
+            android:id="@+id/eval"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/row"
+            android:gravity="center"
+            android:hint="100%"
+            android:inputType="number"
+            android:padding="3dp" />
+
+        <EditText
+            android:id="@+id/cc"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/row"
+            android:hint="00.00"
+            android:inputType="numberDecimal"
+            android:padding="3dp" />
+
+        <TextView
+            android:id="@+id/moy"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/row"
+            android:padding="3dp"
+            android:text="00.00" />
+    </LinearLayout>
+</LinearLayout>
+</HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ajout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/text"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Ajout" />
+        <Button
+            android:id="@+id/calculer"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/text"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Clalculer" />
+
+        <Button
+            android:id="@+id/recomancer"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/text"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Reset" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Somme :"/>
+            <TextView
+                android:id="@+id/somme"
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="00.00"
+                android:background="@drawable/row"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Moyenne :"/>
+            <TextView
+                android:id="@+id/moyGenerale"
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="00.00"
+                android:background="@drawable/row"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

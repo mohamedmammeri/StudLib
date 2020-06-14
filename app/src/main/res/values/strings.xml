@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">StudLib</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+
+    <string name="menu_home">Accueil</string>
+    <string name="menu_support">Support</string>
+    <string name="menu_send">Envoyer</string>
+    <string name="menu_demande">Document</string>
+    <string name="menu_calcule">Calculer la moyenne</string>
+    <string name="menu_comunic">Annexe</string>
+    <string name="menu_specialite">Specialité</string>
+    <string name="menu_physique">Physique</string>
+    <string name="menu_chemie">Chemie</string>
+    <string name="menu_math">Math</string>
+    <string name="menu_info">Informatique</string>
+    <string name="menu_bio">Biologie</string>
+    <string name="menu_search">Rechercher</string>
+
+    <string name="name">Nom :</string>
+    <string name="email">Email:</string>
+    <string name="telephone">Telephone:</string>
+    <string name="date_de_naissance">Date de naissance</string>
+    <string name="specialit">Specialité :</string>
+    <string name="universit">Université</string>
+    <string name="titre">Titre</string>
+    <string name="description">Description</string>
+    <string name="publier">publier</string>
+    <string name="photo">Photo</string>
+    <string name="graduation">Graduation</string>
+    <string name="nouvelles">Nouvelles</string>
+
+
+</resources>

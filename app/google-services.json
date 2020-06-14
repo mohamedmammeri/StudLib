@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "461964977582",
+    "firebase_url": "https://studlib-bd1e1.firebaseio.com",
+    "project_id": "studlib-bd1e1",
+    "storage_bucket": "studlib-bd1e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461964977582:android:2a68d342d05c2a9e",
+        "android_client_info": {
+          "package_name": "com.momalab.studlib"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461964977582-kio4ks32p9klcfahd7tcoqq35d27j8a3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.momalab.studlib",
+            "certificate_hash": "cb5e03a86e0d2653e96e25505ca1d6a21541e55b"
+          }
+        },
+        {
+          "client_id": "461964977582-bj6ebq0r33okmojm8ghh30sd11f1pqsr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPJO-1CK-1JLFuXX6MJ-drVusxpIM4TSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461964977582-bj6ebq0r33okmojm8ghh30sd11f1pqsr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
